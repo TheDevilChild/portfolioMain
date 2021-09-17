@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Roboto:wght@300;400;700&display=swap');
-
-@font-face {
-    font-family: 'blacksword';
-    src: url(Blacksword.otf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Fira+Sans&family=Lobster&family=Pacifico&family=Permanent+Marker&display=swap');
 
 *{
     margin: 0px;
@@ -16,12 +12,16 @@ a {
     text-decoration: none;
 } 
 
+li{
+    list-style-type: none;
+}
+
 #navName{
-    font-family: 'blacksword';
+    font-family: 'acme';
     font-size: 25px;
-    font-weight: 400;
+    font-weight: 600;
     padding: 0 0 0 20px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 
 }
 
@@ -79,18 +79,19 @@ a {
 }
 
 #coverText small{
-    font-family: "Poppins";
+    font-family: "acme";
     font-size: 20px;
 }
 
 #name{
-    font-family: "Poppins";
+    font-family: "acme";
     font-size: 55px;
     font-weight: 600;
+    color: #b67adb;
 }
 
 #coverInfo{
-    font-family: "Poppins";
+    font-family: "acme";
     font-size: 30px;
 }
 
@@ -142,6 +143,20 @@ a {
     z-index: 2;
 }
 
+table,td,th,tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td{
+    padding: 5px 10px;
+}
+
+li{
+    font-size: 20px;
+    font-family: "Poppins";
+    text-align: center;
+}
 #profilePic{
     /* transform: rotate(-2deg); */
     width: 200px;
