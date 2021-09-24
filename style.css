@@ -16,6 +16,11 @@ li{
     list-style-type: none;
 }
 
+.flexRow{
+    display: flex;
+    flex-direction: row;
+}
+
 #navName{
     font-family: 'acme';
     font-size: 25px;
@@ -23,11 +28,6 @@ li{
     padding: 0 0 0 20px;
     letter-spacing: 1px;
 
-}
-
-.flexRow{
-    display: flex;
-    flex-direction: row;
 }
 
 #navBar{
@@ -53,7 +53,6 @@ li{
 #navBar a:hover {
     transform: scale(1.1);
     transition: 0.4s;
-    text-decoration: underline;
 }
 
 #cover{
@@ -96,7 +95,7 @@ li{
 }
 
 .info-box{
-    background-image: linear-gradient(to right, #cbbbec, #9983c5);
+    background-image: linear-gradient(to right, #ca8d8d, #6e53a3);
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -144,12 +143,18 @@ li{
 }
 
 table,td,th,tr{
-    border: 1px solid black;
+    border: 2px solid black;
     border-collapse: collapse;
+    color: #c7b2b2;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px #000000;
+    font-family: 'Acme';
+    letter-spacing: 1px;
+
 }
 
 td{
-    padding: 5px 10px;
+    padding: 5px 20px;
 }
 
 li{
@@ -158,7 +163,6 @@ li{
     text-align: center;
 }
 #profilePic{
-    /* transform: rotate(-2deg); */
     width: 200px;
     border: 1.5px solid black;
 }
@@ -227,6 +231,11 @@ li{
     border-radius: 5px;
 }
 
+.img-container:hover,.skill-container:hover{
+    transform: scale(1.2);
+    transition: 0.5s ;
+}
+
 .skill-container{
     padding: 20px;
     display: flex;
@@ -240,6 +249,7 @@ li{
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     margin: 10px;
 }
+
 
 #skills{
     margin: 16px;
@@ -312,6 +322,11 @@ li{
     width: 35px;
 }
 .icon-links a:hover img{
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+
+#navName:hover{
     transform: scale(1.2);
     transition: 0.4s;
 }
